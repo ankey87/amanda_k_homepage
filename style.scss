@@ -5,6 +5,7 @@ $marginDefault: 0;
 $paddingDefault: 0;
 $textcolor: black;
 $fontFamily: sans-serif;
+$parafontSize: 12px;
 
 body {
     margin: $marginDefault;
@@ -17,7 +18,8 @@ p {
 }
 p {
     margin: 0 1em .7em 1em;
-    line-height: 1.5;
+    line-height: 1.5;;
+    font-size: $parafontSize;
 }
 nav {
     display: flex;
@@ -53,6 +55,26 @@ nav {
     display:  flex;
     justify-content: center;
     margin: 0 1em 0 1em;
+}
+.hero__quotes {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 100%;
+}
+.quotes__left {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    left: 1px;
+}
+.quotes__right {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    left: 3px;
+
 }
 .info__more {
     display: flex;
@@ -148,16 +170,83 @@ nav {
       position: relative;
   }
 @media (min-width: 600px) {
+    p {
+        font-size: 16px;
+    }
+    ul {
+        list-style-type: none;
+        margin: .5em .5em 0 0;
+        padding: $paddingDefault;
+    }
+    nav li {
+        display: inline-block;
+        margin: 0 .5em 0 .5em;
+        font-size: 18px;
+    }
+}
+    .hero__header {
+        font-size: 25px;
+    }
+    .info__kenzie p {
+        font-size: 14px;
+    }
     .info__people {
         display: grid;
         margin-top: 20px;
         grid-template-columns: 50% 50%;
     }
-}
+    .quotes__left {
+        position: relative;
+        right: 2em;
+    }
+    .quotes__right {
+        position: relative;
+        right: 5.5em;
+        p { 
+            margin-top: .8em;
+        }
+    }
+
 @media (min-width: 1000px) {
+    p {
+        font-size: 20px;
+    }
+    ul {
+        list-style-type: none;
+        margin: 1em .5em 0 0;
+        padding: $paddingDefault;
+    }
+    nav li {
+        display: inline-block;
+        margin: 0 .5em 0 .5em;
+        font-size: 25px;
+    }
     .info__people {
         display: grid;
         margin-top: 20px;
         grid-template-columns: 25% 25% 25% 25%;
+    }
+    .hero__quotes {
+        grid-template-columns: 1fr 40% 1fr 40%;
+        justify-content: flex-start;
+        margin: 1em .5em 1em 0;
+        p {
+            font-size: 11px;
+        }
+    }
+    .quotes__right {
+        position: relative;
+        margin: $marginDefault;
+    }
+    .hero__header {
+        font-size: 30px;
+    }
+    .info p {
+        font-size: 16px;
+    }
+    .navbtn__tour {
+        width: 11em;
+        font-size: 15px;
+        margin-right: 5px;
     }
 }
