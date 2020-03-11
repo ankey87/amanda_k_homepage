@@ -1,0 +1,163 @@
+$primaryBtn: blue;
+$textDecoration: none;
+$btntextColor: white;
+$marginDefault: 0;
+$paddingDefault: 0;
+$textcolor: black;
+$fontFamily: sans-serif;
+
+body {
+    margin: $marginDefault;
+    padding: $paddingDefault;
+    font-family: sans-serif;
+}
+h1, h3,
+p {
+    text-align: center;
+}
+p {
+    margin: 0 1em .7em 1em;
+    line-height: 1.5;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    ul {
+        list-style-type: none;
+        margin: 1em .5em 0 .5em;
+        padding: $paddingDefault;
+    }
+        li {
+            display: inline-block;
+            margin: 0 .1em 0 .1em;
+            font-size: 14px;
+            a {
+                text-decoration: $textDecoration;
+                color: $textcolor;
+            }
+        }
+}
+.navbtn__tour {
+    border-radius: 6px;
+    background-color:$primaryBtn;
+    padding: 0.5em;
+    margin-left: .4em;
+    width: 9em;
+    text-align: center;
+    display: inline-block;
+    color: $btntextColor;
+    cursor: pointer;
+}
+.hero__video {
+    display:  flex;
+    justify-content: center;
+    margin: 0 1em 0 1em;
+}
+.info__more {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0 1.5em 0;
+    a {
+        text-decoration: $textDecoration;
+        font-weight: bold;
+    }
+}
+.info__people {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 100%;
+}
+.card__top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card__bottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.fas {
+    font-size: 2rem;
+    width: 1em;
+    margin: 0.3em;
+}
+.card__foot {
+    display: flex;
+    justify-content: center;
+}
+.info__video {
+    display:  flex;
+    justify-content: center;
+    margin: 0 1em 0 1em;
+}
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signup p {
+    margin-bottom: 1em;
+}
+.submit__btn {
+    background-color: $primaryBtn;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    border-radius: 6px;
+    width: 8em;
+    text-align: center;
+    display: inline-block;
+  } 
+  .signup form input[type=submit] {
+    border: none;
+    background-color: $primaryBtn;
+    text-decoration: none;
+    color: $btntextColor;
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 8em;
+    text-align: center;
+    font-size: .8rem;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1.7em;
+  }
+  .signup__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  .signup__name input,
+  .signup__contact input {
+    display: flex;
+    border-style: solid;
+    padding: 5px;
+    margin-bottom: .5em;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  .signup__btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      position: relative;
+  }
+@media (min-width: 600px) {
+    .info__people {
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: 50% 50%;
+    }
+}
+@media (min-width: 1000px) {
+    .info__people {
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
