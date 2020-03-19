@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: #00356b;
 }
 
 h1, h3,
@@ -13,6 +14,7 @@ p {
   margin: 0 1em .7em 1em;
   line-height: 1.5;
   font-size: 12px;
+  font-family: "Poppins", sans-serif;
 }
 
 nav {
@@ -24,6 +26,8 @@ nav {
           justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 1em;
+  background-color: #00356b;
 }
 
 nav ul {
@@ -40,19 +44,34 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+div img {
+  width: 100%;
+  height: 75vh;
 }
 
 .navbtn__tour {
   border-radius: 6px;
-  background-color: blue;
+  background-color: white;
   padding: 0.5em;
   margin-left: .4em;
   width: 9em;
   text-align: center;
   display: inline-block;
-  color: white;
+  color: #00356b;
   cursor: pointer;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+.navbtn__tour:hover {
+  width: 9.5em;
+}
+
+.hero__header {
+  font-family: "Poppins", sans-serif;
 }
 
 .hero__video {
@@ -62,15 +81,18 @@ nav li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 1em 0 1em;
 }
 
 .hero__quotes {
   display: -ms-grid;
   display: grid;
-  margin-top: 20px;
+  margin: 1em 1em 1em 1em;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  padding: 1em 0 .5em 0;
+  background-color: #00356b;
+  color: white;
+  border-radius: 2em;
 }
 
 .quotes__left {
@@ -117,9 +139,13 @@ nav li a {
 .info__people {
   display: -ms-grid;
   display: grid;
-  margin-top: 20px;
+  margin: 1em 1em 0 1em;
+  padding: .5em 0 0 0;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  background-color: #00356b;
+  color: white;
+  border-radius: 2em;
 }
 
 .card__top {
@@ -167,6 +193,7 @@ nav li a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 1em 0 1em;
+  padding: 1em 0 0 0;
 }
 
 .signup {
@@ -183,6 +210,10 @@ nav li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #00356b;
+  color: white;
 }
 
 .signup p {
@@ -190,7 +221,7 @@ nav li a {
 }
 
 .submit__btn {
-  background-color: blue;
+  background-color: white;
   text-decoration: none;
   color: white;
   padding: 0.5em;
@@ -202,9 +233,9 @@ nav li a {
 
 .signup form input[type=submit] {
   border: none;
-  background-color: blue;
+  background-color: white;
   text-decoration: none;
-  color: white;
+  color: #00356b;
   padding: 0.5em;
   border-radius: 5px;
   width: 8em;
@@ -227,6 +258,8 @@ nav li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .signup__name input,
@@ -258,6 +291,7 @@ nav li a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  right: 5px;
 }
 
 @media (min-width: 600px) {
@@ -272,7 +306,7 @@ nav li a {
   nav li {
     display: inline-block;
     margin: 0 .5em 0 .5em;
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
@@ -318,7 +352,7 @@ nav li a {
   nav li {
     display: inline-block;
     margin: 0 .5em 0 .5em;
-    font-size: 25px;
+    font-size: 15px;
   }
   .info__people {
     display: -ms-grid;
@@ -333,7 +367,6 @@ nav li a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    margin: 1em .5em 1em 0;
   }
   .hero__quotes p {
     font-size: 11px;
@@ -350,8 +383,35 @@ nav li a {
   }
   .navbtn__tour {
     width: 11em;
-    font-size: 15px;
+    font-size: 12px;
     margin-right: 5px;
+  }
+  .info__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1em;
+  }
+  .info__text h3 {
+    text-align: left;
+    margin-left: 0;
+  }
+  .std__para {
+    margin: 0;
+    text-align: left;
+  }
+  .signup__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 1em;
+  }
+  .signup__name {
+    margin: 0 .5em 0 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

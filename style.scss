@@ -1,16 +1,19 @@
-$primaryBtn: blue;
+$primaryWhite: white;
+$primaryBlue: #00356b;
 $textDecoration: none;
-$btntextColor: white;
+$btntextColor: #00356b;
 $marginDefault: 0;
 $paddingDefault: 0;
 $textcolor: black;
 $fontFamily: sans-serif;
 $parafontSize: 12px;
+$primaryFont: 'Poppins', sans-serif;;
 
 body {
     margin: $marginDefault;
     padding: $paddingDefault;
-    font-family: sans-serif;
+    font-family: $primaryFont;
+    color: $primaryBlue;
 }
 h1, h3,
 p {
@@ -18,13 +21,16 @@ p {
 }
 p {
     margin: 0 1em .7em 1em;
-    line-height: 1.5;;
+    line-height: 1.5;
     font-size: $parafontSize;
+    font-family: $primaryFont;
 }
 nav {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    padding-bottom: 1em;
+    background-color: $primaryBlue;
     ul {
         list-style-type: none;
         margin: 1em .5em 0 .5em;
@@ -36,13 +42,17 @@ nav {
             font-size: 14px;
             a {
                 text-decoration: $textDecoration;
-                color: $textcolor;
+                color: $primaryWhite;
             }
         }
 }
+div img {
+    width: 100%;
+    height: 75vh;
+}
 .navbtn__tour {
     border-radius: 6px;
-    background-color:$primaryBtn;
+    background-color:$primaryWhite;
     padding: 0.5em;
     margin-left: .4em;
     width: 9em;
@@ -50,16 +60,26 @@ nav {
     display: inline-block;
     color: $btntextColor;
     cursor: pointer;
+    transition: width 2s;
+}
+.navbtn__tour:hover {
+    width: 9.5em;
+}
+.hero__header {
+    font-family: $primaryFont;
 }
 .hero__video {
     display:  flex;
     justify-content: center;
-    margin: 0 1em 0 1em;
 }
 .hero__quotes {
     display: grid;
-    margin-top: 20px;
+    margin: 1em 1em 1em 1em;
     grid-template-columns: 100%;
+    padding: 1em 0 .5em 0;
+    background-color: #00356b;
+    color: $primaryWhite;
+    border-radius: 2em;
 }
 .quotes__left {
     display: flex;
@@ -87,8 +107,13 @@ nav {
 }
 .info__people {
     display: grid;
-    margin-top: 20px;
+    margin: 1em 1em 0 1em;
+    padding: .5em 0 0 0;
     grid-template-columns: 100%;
+    background-color: $primaryBlue;
+    color: $primaryWhite;
+    border-radius: 2em;
+
 }
 .card__top {
     display: flex;
@@ -110,21 +135,25 @@ nav {
     justify-content: center;
 }
 .info__video {
-    display:  flex;
+    display: flex;
     justify-content: center;
     margin: 0 1em 0 1em;
+    padding: 1em 0 0 0;
 }
 .signup {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    background-color: $primaryBlue;
+    color: $primaryWhite;
 }
 .signup p {
     margin-bottom: 1em;
 }
 .submit__btn {
-    background-color: $primaryBtn;
+    background-color: $primaryWhite;
     text-decoration: none;
     color: white;
     padding: 0.5em;
@@ -132,10 +161,10 @@ nav {
     width: 8em;
     text-align: center;
     display: inline-block;
-  } 
+  }
   .signup form input[type=submit] {
     border: none;
-    background-color: $primaryBtn;
+    background-color: $primaryWhite;
     text-decoration: none;
     color: $btntextColor;
     padding: 0.5em;
@@ -152,6 +181,7 @@ nav {
       display: flex;
       flex-direction: column;
       align-items: center;
+      flex-wrap: wrap;
     }
   .signup__name input,
   .signup__contact input {
@@ -168,6 +198,7 @@ nav {
       flex-direction: row;
       justify-content: center;
       position: relative;
+      right: 5px;
   }
 @media (min-width: 600px) {
     p {
@@ -181,7 +212,7 @@ nav {
     nav li {
         display: inline-block;
         margin: 0 .5em 0 .5em;
-        font-size: 18px;
+        font-size: 15px;
     }
 }
     .hero__header {
@@ -219,7 +250,7 @@ nav {
     nav li {
         display: inline-block;
         margin: 0 .5em 0 .5em;
-        font-size: 25px;
+        font-size: 15px;
     }
     .info__people {
         display: grid;
@@ -229,7 +260,6 @@ nav {
     .hero__quotes {
         grid-template-columns: 1fr 40% 1fr 40%;
         justify-content: flex-start;
-        margin: 1em .5em 1em 0;
         p {
             font-size: 11px;
         }
@@ -246,7 +276,27 @@ nav {
     }
     .navbtn__tour {
         width: 11em;
-        font-size: 15px;
+        font-size: 12px;
         margin-right: 5px;
+    }
+    .info__footer {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+    .info__text h3{
+        text-align: left;
+        margin-left: 0;
+    }
+    .std__para {
+        margin: 0;
+        text-align: left;
+    }
+    .signup__form {
+        flex-direction: row;
+        margin-bottom: 1em;
+    }
+    .signup__name {
+        margin: 0 .5em 0 0;
     }
 }
