@@ -49,7 +49,7 @@ nav li a {
 
 div img {
   width: 100%;
-  height: 75vh;
+  height: 60vh;
 }
 
 .navbtn__tour {
@@ -121,6 +121,94 @@ div img {
   left: 3px;
 }
 
+.programs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33.3% 33.3% 33.21%;
+      grid-template-columns: 33.3% 33.3% 33.21%;
+}
+
+.far {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+}
+
+.programs__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.programs__content button {
+  border-style: solid;
+  border-color: #00356b;
+  border-radius: .5em;
+  border-width: .2em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: white;
+}
+
+.programs__content a {
+  color: #00356b;
+  text-decoration: none;
+}
+
+.compare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em 0 0 0;
+  height: 25vh;
+  background-color: darkgray;
+}
+
+.compare h2 {
+  text-align: center;
+  text-shadow: 2px 2px white;
+  margin: .2em .5em .5em .5em;
+  font-size: 30px;
+}
+
+.compare button {
+  width: 175px;
+  padding: .5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: solid 0.2em #00356b;
+  border-radius: .5em;
+  margin-bottom: 1em;
+  background-color: white;
+}
+
+.compare button a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #00356b;
+}
+
 .info__more {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,6 +222,7 @@ div img {
 .info__more a {
   text-decoration: none;
   font-weight: bold;
+  color: #00356b;
 }
 
 .info__people {
@@ -342,7 +431,7 @@ div img {
 
 @media (min-width: 1000px) {
   p {
-    font-size: 20px;
+    font-size: 30px;
   }
   ul {
     list-style-type: none;
@@ -351,8 +440,8 @@ div img {
   }
   nav li {
     display: inline-block;
-    margin: 0 .5em 0 .5em;
-    font-size: 15px;
+    margin: .2em .5em 0 .5em;
+    font-size: 25px;
   }
   .info__people {
     display: -ms-grid;
@@ -369,14 +458,20 @@ div img {
             justify-content: flex-start;
   }
   .hero__quotes p {
-    font-size: 11px;
+    font-size: 15px;
+  }
+  .fas {
+    font-size: 50px;
   }
   .quotes__right {
     position: relative;
     margin: 0;
   }
-  .hero__header {
+  .compare h2 {
     font-size: 30px;
+  }
+  .hero__header {
+    font-size: 50px;
   }
   .info p {
     font-size: 16px;
@@ -384,6 +479,7 @@ div img {
   .navbtn__tour {
     width: 11em;
     font-size: 12px;
+    padding: 8px;
     margin-right: 5px;
   }
   .info__footer {
@@ -398,6 +494,7 @@ div img {
   .info__text h3 {
     text-align: left;
     margin-left: 0;
+    font-size: 25px;
   }
   .std__para {
     margin: 0;
