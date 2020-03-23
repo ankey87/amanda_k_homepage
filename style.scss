@@ -7,359 +7,363 @@ $paddingDefault: 0;
 $textcolor: black;
 $fontFamily: sans-serif;
 $parafontSize: 12px;
-$primaryFont: 'Poppins', sans-serif;;
+$primaryFont: "Poppins", sans-serif;
 
 body {
-    margin: $marginDefault;
-    padding: $paddingDefault;
-    font-family: $primaryFont;
-    color: $primaryBlue;
+  margin: $marginDefault;
+  padding: $paddingDefault;
+  font-family: $primaryFont;
+  color: $primaryBlue;
 }
-h1, h3,
+h1,
+h3,
 p {
-    text-align: center;
+  text-align: center;
 }
 p {
-    margin: 0 1em .7em 1em;
-    line-height: 1.5;
-    font-size: $parafontSize;
-    font-family: $primaryFont;
+  margin: 0 1em 0.7em 1em;
+  line-height: 1.5;
+  font-size: $parafontSize;
+  font-family: $primaryFont;
 }
 nav {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    padding-bottom: 1em;
-    background-color: $primaryBlue;
-    ul {
-        list-style-type: none;
-        margin: 1em .5em 0 .5em;
-        padding: $paddingDefault;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding-bottom: 1em;
+  background-color: $primaryBlue;
+  ul {
+    list-style-type: none;
+    margin: 1em 0.5em 0 0.5em;
+    padding: $paddingDefault;
+  }
+  li {
+    display: inline-block;
+    margin: 0 0.1em 0 0.1em;
+    font-size: 14px;
+    a {
+      text-decoration: $textDecoration;
+      color: $primaryWhite;
     }
-        li {
-            display: inline-block;
-            margin: 0 .1em 0 .1em;
-            font-size: 14px;
-            a {
-                text-decoration: $textDecoration;
-                color: $primaryWhite;
-            }
-        }
+  }
 }
 div img {
-    width: 100%;
-    height: 60vh;
+  // by adding object-fit: cover; your header image is no longer squished. And flows better for your responsive design.
+  object-fit: cover;
+  width: 100%;
+  height: 60vh;
 }
 .navbtn__tour {
-    border-radius: 6px;
-    background-color:$primaryWhite;
-    padding: 0.5em;
-    margin-left: .4em;
-    width: 9em;
-    text-align: center;
-    display: inline-block;
-    color: $btntextColor;
-    cursor: pointer;
-    transition: width 2s;
+  border-radius: 6px;
+  background-color: $primaryWhite;
+  padding: 0.5em;
+  margin-left: 0.4em;
+  width: 9em;
+  text-align: center;
+  display: inline-block;
+  color: $btntextColor;
+  cursor: pointer;
+  transition: width 2s;
 }
 .navbtn__tour:hover {
-    width: 9.5em;
+  width: 9.5em;
 }
 .hero__header {
-    font-family: $primaryFont;
+  font-family: $primaryFont;
 }
 .hero__video {
-    display:  flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .hero__quotes {
-    display: grid;
-    margin: 1em 1em 1em 1em;
-    grid-template-columns: 100%;
-    padding: 1em 0 .5em 0;
-    background-color: #00356b;
-    color: $primaryWhite;
-    border-radius: 2em;
+  display: grid;
+  margin: 6em 1em 6em 1em;
+  grid-template-columns: 100%;
+  padding: 1em 0 0.5em 0;
+  background-color: #00356b;
+  color: $primaryWhite;
+  border-radius: 2em;
 }
 .quotes__left {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    left: 1px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  left: 1px;
 }
 .quotes__right {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    left: 3px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  left: 3px;
 }
 .programs {
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.21%;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.21%;
 }
 .far {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
 }
 .programs__content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  margin-bottom: 6em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .programs__content button {
-    border-style: solid;
-    border-color: $primaryBlue;
-    border-radius: .5em;
-    border-width: .2em;
-    align-self: center;
-    background-color: $primaryWhite;
+  border-style: solid;
+  border-color: $primaryBlue;
+  border-radius: 0.5em;
+  border-width: 0.2em;
+  align-self: center;
+  background-color: $primaryWhite;
 }
 .programs__content a {
-    color: $primaryBlue;
-    text-decoration: $textDecoration;
+  color: $primaryBlue;
+  text-decoration: $textDecoration;
 }
 .compare {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 1em 0 0 0;
-    height: 25vh;
-    background-color: darkgray;
-    
-    h2 {
-        text-align: center;
-        text-shadow: 2px 2px $primaryWhite;
-        margin: .2em .5em .5em .5em;
-        font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em 0 0 0;
+  height: 25vh;
+  background-color: darkgray;
+
+  h2 {
+    text-align: center;
+    text-shadow: 2px 2px $primaryWhite;
+    margin: 0.2em 0.5em 0.5em 0.5em;
+    font-size: 30px;
+  }
+  button {
+    width: 175px;
+    padding: 0.5em;
+    align-self: center;
+    border: solid 0.2em $primaryBlue;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    background-color: $primaryWhite;
+    a {
+      font-size: 16px;
+      text-decoration: $textDecoration;
+      color: $primaryBlue;
     }
-    button {
-        width: 175px;
-        padding: .5em;
-        align-self: center;
-        border: solid .2em $primaryBlue;
-        border-radius: .5em;
-        margin-bottom: 1em;
-        background-color: $primaryWhite;
-        a {
-            font-size: 16px;
-            text-decoration: $textDecoration;
-            color: $primaryBlue;
-        }
-    }
+  }
 }
 .info__more {
-    display: flex;
-    justify-content: center;
-    margin: 1em 0 1.5em 0;
-    a {
-        text-decoration: $textDecoration;
-        font-weight: bold;
-        color: $primaryBlue;
-    }
+  display: flex;
+  justify-content: center;
+  margin: 1em 0 1.5em 0;
+  a {
+    text-decoration: $textDecoration;
+    font-weight: bold;
+    color: $primaryBlue;
+  }
 }
 .info__people {
-    display: grid;
-    margin: 1em 1em 0 1em;
-    padding: .5em 0 0 0;
-    grid-template-columns: 100%;
-    background-color: $primaryBlue;
-    color: $primaryWhite;
-    border-radius: 2em;
+  display: grid;
+  margin: 1em 1em 4em 1em;
+  padding: 0.5em 0 0 0;
+  grid-template-columns: 100%;
+  background-color: $primaryBlue;
+  color: $primaryWhite;
+  border-radius: 2em;
 }
 .card__top {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .card__bottom {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .fas {
-    font-size: 2rem;
-    width: 1em;
-    margin: 0.3em;
+  font-size: 2rem;
+  width: 1em;
+  margin: 0.3em;
 }
 .card__foot {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .info__video {
-    display: flex;
-    justify-content: center;
-    margin: 0 1em 0 1em;
-    padding: 1em 0 0 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 1em 0 1em;
+  padding: 1em 0 0 0;
 }
 .signup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: $primaryBlue;
-    color: $primaryWhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $primaryBlue;
+  color: $primaryWhite;
 }
 .signup p {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 .submit__btn {
-    background-color: $primaryWhite;
-    text-decoration: none;
-    color: white;
-    padding: 0.5em;
-    border-radius: 6px;
-    width: 8em;
-    text-align: center;
-    display: inline-block;
-  }
-  .signup form input[type=submit] {
-    border: none;
-    background-color: $primaryWhite;
-    text-decoration: none;
-    color: $btntextColor;
-    padding: 0.5em;
-    border-radius: 5px;
-    width: 8em;
-    text-align: center;
-    font-size: .8rem;
-    cursor: pointer;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 1.7em;
-  }
-  .signup__form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-  .signup__name input,
-  .signup__contact input {
-    display: flex;
-    border-style: solid;
-    padding: 5px;
-    margin-bottom: .5em;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-  }
-  .signup__btn {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      position: relative;
-      right: 5px;
-  }
-@media (min-width: 600px) {
-    p {
-        font-size: 16px;
-    }
-    ul {
-        list-style-type: none;
-        margin: .5em .5em 0 0;
-        padding: $paddingDefault;
-    }
-    nav li {
-        display: inline-block;
-        margin: 0 .5em 0 .5em;
-        font-size: 15px;
-    }
+  background-color: $primaryWhite;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  border-radius: 6px;
+  width: 8em;
+  text-align: center;
+  display: inline-block;
 }
-    .hero__header {
-        font-size: 25px;
-    }
-    .info__kenzie p {
-        font-size: 14px;
-    }
-    .info__people {
-        display: grid;
-        margin-top: 20px;
-        grid-template-columns: 50% 50%;
-    }
-    .quotes__left {
-        position: relative;
-        right: 2em;
-    }
-    .quotes__right {
-        position: relative;
-        right: 5.5em;
-        p { 
-            margin-top: .8em;
-        }
-    }
+.signup form input[type="submit"] {
+  border: none;
+  background-color: $primaryWhite;
+  text-decoration: none;
+  color: $btntextColor;
+  padding: 0.5em;
+  border-radius: 5px;
+  width: 8em;
+  text-align: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1.7em;
+}
+.signup__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.signup__name input,
+.signup__contact input {
+  display: flex;
+  border-style: solid;
+  padding: 5px;
+  margin-bottom: 0.5em;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.signup__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  right: 5px;
+}
+@media (min-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0.5em 0.5em 0 0;
+    padding: $paddingDefault;
+  }
+  nav li {
+    display: inline-block;
+    margin: 0 0.5em 0 0.5em;
+    font-size: 15px;
+  }
+}
+.hero__header {
+  font-size: 25px;
+}
+.info__kenzie p {
+  font-size: 14px;
+}
+.info__people {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 50% 50%;
+}
+.quotes__left {
+  position: relative;
+  right: 2em;
+}
+.quotes__right {
+  position: relative;
+  right: 5.5em;
+  p {
+    margin-top: 0.8em;
+  }
+}
 
 @media (min-width: 1000px) {
+  p {
+    font-size: 30px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 1em 0.5em 0 0;
+    padding: $paddingDefault;
+  }
+  nav li {
+    display: inline-block;
+    margin: 0.2em 0.5em 0 0.5em;
+    font-size: 25px;
+  }
+  .info__people {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  .hero__quotes {
+    grid-template-columns: 1fr 40% 1fr 40%;
+    justify-content: flex-start;
     p {
-        font-size: 30px;
+      font-size: 15px;
     }
-    ul {
-        list-style-type: none;
-        margin: 1em .5em 0 0;
-        padding: $paddingDefault;
-    }
-    nav li {
-        display: inline-block;
-        margin: .2em .5em 0 .5em;
-        font-size: 25px;
-    }
-    .info__people {
-        display: grid;
-        margin-top: 20px;
-        grid-template-columns: 25% 25% 25% 25%;
-    }
-    .hero__quotes {
-        grid-template-columns: 1fr 40% 1fr 40%;
-        justify-content: flex-start;
-        p {
-            font-size: 15px;
-        }
-    }
-    .fas {
-        font-size: 50px;
-    }
-    .quotes__right {
-        position: relative;
-        margin: $marginDefault;
-    }
-    .compare h2 {
-        font-size: 30px;
-    }
-    .hero__header {
-        font-size: 50px;
-    }
-    .info p {
-        font-size: 16px;
-    }
-    .navbtn__tour {
-        width: 11em;
-        font-size: 12px;
-        padding: 8px;
-        margin-right: 5px;
-    }
-    .info__footer {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1em;
-    }
-    .info__text h3{
-        text-align: left;
-        margin-left: 0;
-        font-size: 25px;
-    }
-    .std__para {
-        margin: 0;
-        text-align: left;
-    }
-    .signup__form {
-        flex-direction: row;
-        margin-bottom: 1em;
-    }
-    .signup__name {
-        margin: 0 .5em 0 0;
-    }
+  }
+  .fas {
+    font-size: 50px;
+  }
+  .quotes__right {
+    position: relative;
+    margin: $marginDefault;
+  }
+  .compare h2 {
+    font-size: 30px;
+  }
+  .hero__header {
+    font-size: 50px;
+  }
+  .info p {
+    font-size: 16px;
+  }
+  .navbtn__tour {
+    width: 11em;
+    font-size: 12px;
+    padding: 8px;
+    margin-right: 5px;
+  }
+  .info__footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .info__text h3 {
+    text-align: left;
+    margin-left: 0;
+    font-size: 25px;
+  }
+  .std__para {
+    margin: 0;
+    text-align: left;
+  }
+  .signup__form {
+    flex-direction: row;
+    margin-bottom: 1em;
+  }
+  .signup__name {
+    margin: 0 0.5em 0 0;
+  }
 }
